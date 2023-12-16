@@ -1,0 +1,46 @@
+{
+  "entry": ["index.ts", "api/src/index.ts"],
+  "project": ["api/src/**/*.ts"],
+  "plugins": ["prettier"],
+  "commitizen": {
+    "config": [".czrc", ".cz.json", "package.json"]
+  },
+  "commitlint": {
+    "config": [
+      ".commitlintrc",
+      ".commitlintrc.{json,yaml,yml,js,cjs,ts,cts}",
+      "commitlint.config.{js,cjs,ts,cts}",
+      "package.json"
+    ]
+  },
+  "lint-staged": {
+    "config": [
+      ".lintstagedrc",
+      ".lintstagedrc.json",
+      ".lintstagedrc.{yml,yaml}",
+      ".lintstagedrc.{js,mjs,cjs}",
+      "lint-staged.config.{js,mjs,cjs}",
+      "package.json"
+    ]
+  },
+  "husky": {
+    "config": [
+      ".husky/prepare-commit-msg",
+      ".husky/commit-msg",
+      ".husky/pre-{applypatch,commit,merge-commit,push,rebase,receive}",
+      ".husky/post-{checkout,commit,merge,rewrite}"
+    ]
+  },
+  "typescript": {
+    "config": ["tsconfig.json", "tsconfig.*.json"]
+  },
+  "eslint": {
+    "config": [
+      "eslint.config.js",
+      ".eslintrc",
+      ".eslintrc.{js,json,cjs}",
+      ".eslintrc.{yml,yaml}",
+      "package.json"
+    ]
+  }
+}
