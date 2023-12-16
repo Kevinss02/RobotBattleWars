@@ -4,14 +4,14 @@ import morgan from 'morgan';
 
 const app: Express = express();
 
-// middlewares
+// Middlewares
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
 app.all('*', (_, res) => {
   console.log('Not implemented');
-  res.status(501).send();
+  res.status(501).json({ code: 501, message: 'Not implemented' });
 });
 
 export default app;
