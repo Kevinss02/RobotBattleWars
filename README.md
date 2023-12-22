@@ -1,5 +1,11 @@
 # Robot Battle Wars API
 
+# Authors
+
+- Adrián Grassin Luis
+- Jairo Alonso Abreu
+- Kevin Salcedo Santana
+
 ## Overview
 
 Welcome to the Robot Battles API! This API provides a platform to manage and organize epic robot battles. It is built with Node.js and Express, and it uses PostgreSQL as the database for storing information about robots, battles, and their outcomes.
@@ -36,13 +42,13 @@ Ensure you have the following software installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/robot-battle-wars-api.git
+   git clone https://github.com/your-username/RobotBattleWars.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd robot-battle-wars-api
+   cd RobotBattleWars
    pnpm install
    ```
 
